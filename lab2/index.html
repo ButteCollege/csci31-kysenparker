@@ -7,16 +7,40 @@
 <meta name="keywords" content="HTML, CSS, JavaScript">
 <meta name="author" content="Kysen Parker">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    #pre-tag {
+        font-size: 50px;
+    }
+    .blue {
+        background: #0000FF;
+    }
+    .green {
+        background: #00FF00;
+    }
+    .red {
+        background: #FF0000;
+    }
+    div {
+        margin: 10px;
+        border: 5px solid pink;
+        padding: 30px;
+    }
+    span {
+        margin: 10px;
+        border: 5px solid pink;
+        padding: 30px;
+    }
+</style>
 </head>
 <body>
-<pre>console.log(’hello world’)</pre>
+<pre id="pre-tag">console.log(’hello world’)</pre>
 <hr />
-<div>This is block one</div>
-<div>This is block two</div>
-<div>This is block three</div>
-<span>This is inline one</span>
-<span>This is inline two</span>
-<span>This is inline three</span>
+<div class="red">This is block one</div>
+<div class="blue">This is block two</div>
+<div class="green">This is block three</div>
+<span class="red">This is inline one</span>
+<span class="blue">This is inline two</span>
+<span class="green">This is inline three</span>
 <p>
 <span>&yen;</span>
 <span>&euro;</span>
