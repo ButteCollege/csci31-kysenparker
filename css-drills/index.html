@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Div Practice</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 20px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        div {
+            max-width: 100%;
+            overflow-wrap: break-word;
+        }
+
+        .outer {
+            background-color: lightblue;
+            height: 300px;
+            width: 500px;
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+            border: 3px solid black;
+            position: relative;
+        }
+
+        .inner {
+            background-color: pink;
+            height: 50px;
+            width: 150px;
+            max-width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .active-div {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            transition: background-color 0.5s;
+        }
+
+        .active-div:active {
+            background-color: red;
+        }
+
+        .hover-div {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            transition: background-color 0.5s;
+        }
+
+        .hover-div:hover {
+            background-color: green;
+        }
+
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>Div 1 - Lorem ipsum dolor sit amet.</div>
+    <div>Div 2 - Lorem ipsum dolor sit amet.</div>
+    <div>Div 3 - Lorem ipsum dolor sit amet.</div>
+    <div>Div 4 - Lorem ipsum dolor sit amet.</div>
+    <div>Div 5 - Lorem ipsum dolor sit amet.</div>
+    <div>Div 6 - Lorem ipsum dolor sit amet.</div>
+    <div>Div 7 - Lorem ipsum dolor sit amet.</div>
+    <div>Div 8 - Lorem ipsum dolor sit amet.</div>
+    <div>Div 9 - Lorem ipsum dolor sit amet.</div>
+    <div>Div 10 - Lorem ipsum dolor sit amet.</div>
+
+    <div style="text-align: left;">
+        This text is aligned left.
+    </div>
+
+    <div style="text-align: center;">
+        This text is aligned center.
+    </div>
+
+    <div style="text-align: right;">
+        This text is aligned right.
+    </div>
+
+    <div style="text-align: justify;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </div>
+
+    <div style="width: 500px; max-width: 100%; margin: 0 auto;">
+        This div is centered on the page.
+    </div>
+
+    <div class="outer">
+        <div class="inner">
+            I am centered!
+        </div>
+    </div>
+
+    <div style="
+        background-color: lightblue;
+        width: 150px;
+        height: 100px;
+        transform: rotate(20deg);
+        margin: 40px;
+    ">
+        Rotated div
+    </div>
+
+    <div style="
+        background-color: lightgreen;
+        width: 150px;
+        height: 100px;
+        transform: scale(1.5);
+        transform-origin: left center;
+        margin-bottom: 50px;
+    ">
+        Larger div
+    </div>
+
+    <div style="
+        background-color: lightcoral;
+        width: 200px;
+        height: 100px;
+        transform: scale(0.5);
+        transform-origin: left center;
+    ">
+        Smaller div
+    </div>
+
+    <div style="
+        background-color: orange;
+        width: 150px;
+        height: 100px;
+        transform: skew(20deg);
+        margin: 20px;
+    ">
+        Skewed div
+    </div>
+
+    <div class="active-div">
+        Click and hold me!
+    </div>
+
+    <div class="hover-div">
+        Hover over me!
+    </div>
+
+    <a href="https://www.google.com">
+        <div style="width: 200px; max-width: 100%;">
+            1
+        </div>
+    </a>
+
+    <a href="https://www.google.com">
+        2
+    </a>
+
+</body>
+</html>
